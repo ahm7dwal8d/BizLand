@@ -46,10 +46,6 @@
       <div class="burger-icon bottom">
         <i class="fas fa-bars fs-1"></i>
       </div>
-      <div class="overly">
-        <span class="closebutton">
-          X
-        </span>
         <ul class="m-0">
           <li>
             <a href="#" class="active text-decoration-none text-capitalize fw-bold fs-5 me-5 top" data-scroll="landing">home</a>
@@ -70,7 +66,6 @@
             <a href="#" class="text-decoration-none text-capitalize fw-bold fs-5 me-5 right" data-scroll="contact">contact</a>
           </li>
         </ul>
-      </div>
     </div>
   </header>
   <!-- End Header  -->
@@ -87,14 +82,6 @@
             <div class="landing-btn bottom">
               <button class="text-decoration-none text-capitalize text-white" data-lan="feature">get start</button>
             </div>
-            <div class="btn">
-              <button class="prev right" onclick="lanPrev()">
-                <i class="fas fa-angle-left fs-2" aria-hidden="true"></i>
-              </button>
-              <button class="next left" onclick="lanNext()">
-                <i class="fas fa-angle-right fs-2" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
         <div class="slider-2 slide">
@@ -105,14 +92,6 @@
             </p>
             <div class="landing-btn bottom">
               <button class="text-decoration-none text-capitalize text-white" data-lan="feature">get start</button>
-            </div>
-            <div class="btn">
-              <button class="prev right" onclick="lanPrev()">
-                <i class="fas fa-angle-left fs-2" aria-hidden="true"></i>
-              </button>
-              <button class="next left" onclick="lanNext()">
-                <i class="fas fa-angle-right fs-2" aria-hidden="true"></i>
-              </button>
             </div>
           </div>
         </div>
@@ -125,14 +104,6 @@
             <div class="landing-btn bottom">
               <button class="text-decoration-none text-capitalize text-white" data-lan="feature">get start</button>
             </div>
-            <div class="btn">
-              <button class="prev right" onclick="lanPrev()">
-                <i class="fas fa-angle-left fs-2" aria-hidden="true"></i>
-              </button>
-              <button class="next left" onclick="lanNext()">
-                <i class="fas fa-angle-right fs-2" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
         <div class="slider-4 slide">
@@ -143,14 +114,6 @@
             </p>
             <div class="landing-btn bottom">
               <button class="text-decoration-none text-capitalize text-white" data-lan="feature">get start</button>
-            </div>
-            <div class="btn">
-              <button class="prev right" onclick="lanPrev()">
-                <i class="fas fa-angle-left fs-2" aria-hidden="true"></i>
-              </button>
-              <button class="next left" onclick="lanNext()">
-                <i class="fas fa-angle-right fs-2" aria-hidden="true"></i>
-              </button>
             </div>
           </div>
         </div>
@@ -163,14 +126,6 @@
             <div class="landing-btn bottom">
               <button class="text-decoration-none text-capitalize text-white" data-lan="feature">get start</button>
             </div>
-            <div class="btn">
-              <button class="prev right" onclick="lanPrev()">
-                <i class="fas fa-angle-left fs-2" aria-hidden="true"></i>
-              </button>
-              <button class="next left" onclick="lanNext()">
-                <i class="fas fa-angle-right fs-2" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
         <div class="slider-6 slide">
@@ -182,39 +137,61 @@
             <div class="landing-btn bottom">
               <button class="text-decoration-none text-capitalize text-white" data-lan="feature">get start</button>
             </div>
-            <div class="btn">
-              <button class="prev right" onclick="lanPrev()">
-                <i class="fas fa-angle-left fs-2" aria-hidden="true"></i>
-              </button>
-              <button class="next left" onclick="lanNext()">
-                <i class="fas fa-angle-right fs-2" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
+      </div>
+      <div class="btn">
+        <button class="prev right" onclick="lanPrev()">
+          <i class="fas fa-angle-left fs-4" aria-hidden="true"></i>
+        </button>
+        <button class="next left" onclick="lanNext()">
+          <i class="fas fa-angle-right fs-4" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
   </section>
   <!-- End Landing -->
-  <!-- Start Setting Box  -->
+  <!-- Start Setting-box  -->
   <div class="setting-box">
-    <div class="container mt-3">
-      <div class="icon">
-        <i class="fas fa-cog fs-4"></i>
-      </div>
-      <div class="color">
-        <h5 class="text-capitalize">change default color</h5>
-        <ul class="p-0 m-0 d-flex">
-          <div class="color" data-color="one"></div>
-          <div class="color" data-color="two"></div>
-          <div class="color" data-color="three"></div>
-          <div class="color" data-color="four"></div>
-          <div class="color" data-color="five"></div>
-        </ul>
-      </div>
+    <div class="icon">
+      <i class="fas fa-cog"></i>
+    </div>
+    <div class="color option">
+      <h4>change color</h4>
+      <ul class="p-0 m-0">
+        <li class="active" data-color="#106eea"></li>
+        <li data-color="#f44336"></li>
+        <li data-color="#e91e63"></li>
+        <li data-color="#ff9800"></li>
+        <li data-color="#ffeb3b"></li>
+      </ul>
+    </div>
+    <div class="theme option">
+      <h5>change background</h5>
+      <ul class="p-0 m-0">
+        <li data-theme="#eee">dark</li>
+        <li class="active" data-theme="#fff">light</li>
+      </ul>
+    </div>
+    <div class="random option">
+      <h4>make slider</h4>
+      <ul class="p-0 m-0">
+        <li data-random="true">start</li>
+        <li class="active" data-random="false">stop</li>
+      </ul>
+    </div>
+    <div class="bullets option">
+      <h4>bullets option</h4>
+      <ul class="p-0 m-0">
+        <li data-bullets="true">yes</li>
+        <li class="active" data-bullets="false">no</li>
+      </ul>
+    </div>
+    <div class="reset option">
+      <button>resst option</button>
     </div>
   </div>
-  <!-- End Setting Box  -->
+  <!-- End Setting-box  -->
   <!-- Start Feature -->
   <div class="feature pt-5 pb-5">
     <div class="container">
@@ -546,14 +523,6 @@
               recusandae enim est nostrum. Laborum hic quasi neque, cupiditate ex ipsum.
               <i class="fas fa-quote-right fs-4 text-black-50"></i>
             </p>
-            <div class="btn">
-              <button class="prev" onclick="testPrev()">
-                <i class="fas fa-angle-left fs-1" aria-hidden="true"></i>
-              </button>
-              <button class="next" onclick="testNext()">
-                <i class="fas fa-angle-right fs-1" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
         <div class="slider-2 slide">
@@ -567,14 +536,6 @@
               recusandae enim est nostrum. Laborum hic quasi neque, cupiditate ex ipsum.
               <i class="fas fa-quote-right fs-4 text-black-50"></i>
             </p>
-            <div class="btn">
-              <button class="prev" onclick="testPrev()">
-                <i class="fas fa-angle-left fs-1" aria-hidden="true"></i>
-              </button>
-              <button class="next" onclick="testNext()">
-                <i class="fas fa-angle-right fs-1" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
         <div class="slider-3 slide">
@@ -588,14 +549,6 @@
               recusandae enim est nostrum. Laborum hic quasi neque, cupiditate ex ipsum.
               <i class="fas fa-quote-right fs-4 text-black-50"></i>
             </p>
-            <div class="btn">
-              <button class="prev" onclick="testPrev()">
-                <i class="fas fa-angle-left fs-1" aria-hidden="true"></i>
-              </button>
-              <button class="next" onclick="testNext()">
-                <i class="fas fa-angle-right fs-1" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
         <div class="slider-4 slide">
@@ -609,16 +562,16 @@
               recusandae enim est nostrum. Laborum hic quasi neque, cupiditate ex ipsum.
               <i class="fas fa-quote-right fs-4 text-black-50"></i>
             </p>
-            <div class="btn">
-              <button class="prev" onclick="testPrev()">
-                <i class="fas fa-angle-left fs-1" aria-hidden="true"></i>
-              </button>
-              <button class="next" onclick="testNext()">
-                <i class="fas fa-angle-right fs-1" aria-hidden="true"></i>
-              </button>
-            </div>
           </div>
         </div>
+      </div>
+      <div class="btn">
+        <button class="prev" onclick="testPrev()">
+          <i class="fas fa-angle-left fs-1" aria-hidden="true"></i>
+        </button>
+        <button class="next" onclick="testNext()">
+          <i class="fas fa-angle-right fs-1" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -635,10 +588,10 @@
       </div>
       <div class="portfolio-head mt-4">
         <ul class="m-0 p-0 text-center d-flex justify-content-center hidden">
-          <li class="active text-uppercase p-2 " data-class="all">all</li>
-          <li class="text-uppercase p-2 " data-class="app">app</li>
-          <li class="text-uppercase p-2 " data-class="car">card</li>
-          <li class="text-uppercase p-2 " data-class="web">web</li>
+          <li class="active text-uppercase p-2 " data-class=".all">all</li>
+          <li class="text-uppercase p-2 " data-class=".app">app</li>
+          <li class="text-uppercase p-2 " data-class=".car">card</li>
+          <li class="text-uppercase p-2 " data-class=".web">web</li>
         </ul>
       </div>
       <div class="row mt-4">
@@ -1042,6 +995,14 @@
     <p>Designed by <span class="text-danger fs-4">♥</span> <span class="text-capitalize fw-bold">ahmed walid</span> </p>
   </div>
   <span class="up text-uppercase fw-bold">up</span>
+  <div class="bullet">
+    <span data-bullet="landing"></span>
+    <span data-bullet="about"></span>
+    <span data-bullet="services"></span>
+    <span data-bullet="portfolio"></span>
+    <span data-bullet="team"></span>
+    <span data-bullet="contact"></span>
+  </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
