@@ -207,7 +207,8 @@ body {
     padding: 29px;
     list-style: none;
     animation: hide 0.7s ease-in-out forwards;
-    -webkit-animation: hide 0.7s ease-in-out forwards;
+    animation: width 0.4s ease-in-out forwards;
+    -webkit-animation: width 0.4s ease-in-out forwards;
 }
 .header-overly ul a {
     display: block;
@@ -790,6 +791,7 @@ body {
     top: 50%;
     left: 50%;
     width: 100%;
+    z-index: 1;
     transform: translate(-50% , -50%);
     -webkit-transform: translate(-50% , -50%);
     -moz-transform: translate(-50% , -50%);
@@ -1121,8 +1123,9 @@ span.up.active {
 .bullet {
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: -100px;
     z-index: 100;
+    text-transform: capitalize;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -1137,8 +1140,14 @@ span.up.active {
 }
 .bullet.active {
     opacity: 1;
+    right: 20px;
+    transition: var(--main-Transition);
     animation: bullet 0.8s ease-in-out backwards;
     -webkit-animation: bullet 0.8s ease-in-out backwards;
+    -webkit-transition: var(--main-Transition);
+    -moz-transition: var(--main-Transition);
+    -ms-transition: var(--main-Transition);
+    -o-transition: var(--main-Transition);
 }
 .bullet span::after {
     border-radius: 4px;
@@ -1310,9 +1319,6 @@ span.up.active {
 }
 /* Start Animation  */
 @keyframes bullet {
-    0% {
-        right: -100px;
-    }
     100% {
         right: 20px;
     }
@@ -1323,6 +1329,14 @@ span.up.active {
     }
     100% {
         opacity: 1;
+    }
+}
+@keyframes width {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
     }
 }
 @keyframes rounded {
